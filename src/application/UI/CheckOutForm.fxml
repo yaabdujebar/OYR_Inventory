@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Hyperlink?>
+<AnchorPane prefHeight="433.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibrarySystem.Controllers.CheckOutController">
+    <children>
+        <Label fx:id="checkout" layoutX="62.0" layoutY="79.0" text="Checkout Form">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label layoutX="62.0" layoutY="119.0" text="Member Id"/>
+        <TextField fx:id="memberId" layoutX="62.0" layoutY="149.0"/>
+        <Label layoutX="62.0" layoutY="192.0" text="Book ISBN"/>
+        <TextField fx:id="isbnId" layoutX="62.0" layoutY="222.0"/>
+        <Label fx:id="userMissing" layoutX="223.0" layoutY="153.0" text=" " textFill="#dd2222"/>
+        <Label fx:id="bookMissing" layoutX="223.0" layoutY="226.0" text=" " textFill="#e81e1e"/>
+        <Button layoutX="67.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleCheckOut" text="Check Out"/>
+        <Label fx:id="copyRunOut" layoutX="151.0" layoutY="294.0" text=" " textFill="#eb0d0d"/>
+        <DatePicker fx:id="dueDate" layoutX="64.0" layoutY="319.0"/>
+        <Label layoutX="64.0" layoutY="294.0" text="Due Date"/>
+        <TableView fx:id="table" layoutX="255.0" layoutY="62.0" prefHeight="315.0" prefWidth="373.0" visible="false">
+            <columns>
+                <TableColumn fx:id="bookNameColumn" prefWidth="175.0" text="Name of Book"/>
+                <TableColumn fx:id="checkOutDateColumn" prefWidth="104.0" text="Date of Checkout"/>
+                <TableColumn fx:id="dateOfDueColumn" prefWidth="93.0" text="Due Date"/>
+            </columns>
+        </TableView>
+        <Label fx:id="recOfMember" layoutX="254.0" layoutY="31.0" text=" "/>
+        <Label layoutX="254.0" layoutY="40.0" text="&lt; Hide Table" visible="false"/>
+        <Hyperlink fx:id="viewTable" layoutX="67.0" layoutY="388.0" onMouseClicked="#viewTable"
+                   text="View Member Record" visible="false"/>
+        <Button fx:id="back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleBack"
+                text="&lt;- Back"/>
+        <Label fx:id="invalidMember" layoutX="223.0" layoutY="153.0" text=" " textFill="#eb0a0a"/>
+        <Label fx:id="invalidIsbn" layoutX="227.0" layoutY="226.0" text=" " textFill="#dd0e0e"/>
+        <Label layoutX="149.0" layoutY="358.0" text=" " textFill="#eb0707" fx:id="areEmpty"/>
+    </children>
+</AnchorPane>

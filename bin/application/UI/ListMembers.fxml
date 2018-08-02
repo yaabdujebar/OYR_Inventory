@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ListMemberController">
+   <children>
+      <Region prefHeight="392.0" prefWidth="120.0" />
+      <VBox layoutX="122.0" prefHeight="400.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="LIST OF MEMBERS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Region prefHeight="20.0" prefWidth="600.0" />
+            <VBox alignment="TOP_RIGHT" prefHeight="29.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="showButton" alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#showList" text="Show List" />
+               </children>
+            </VBox>
+            <TableView fx:id="tableMember" prefHeight="332.0" prefWidth="332.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="105.00003051757812" text="Member ID" />
+                <TableColumn fx:id="fName" prefWidth="123.00000762939453" text="First Name" />
+                  <TableColumn fx:id="lName" prefWidth="115.0" text="Last Name" />
+                  <TableColumn fx:id="telephone" prefWidth="117.99996948242188" text="Telephone" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Sphere layoutX="-71.0" layoutY="-47.0" radius="0.77" />
+   </children>
+</AnchorPane>

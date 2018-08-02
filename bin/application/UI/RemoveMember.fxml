@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="438.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.RemoveMemberContoller">
+   <children>
+      <AnchorPane layoutX="-122.0" layoutY="-126.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="78.0" layoutY="105.0" prefHeight="30.0" prefWidth="92.0" text="Member ID" />
+      <TextField fx:id="id" layoutX="163.0" layoutY="105.0" prefHeight="30.0" prefWidth="132.0" />
+      <Button fx:id="removeButton" layoutX="323.0" layoutY="108.0" mnemonicParsing="false" onAction="#removeMember" text="Remove" />
+      <Text fx:id="display" layoutX="400.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="276.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

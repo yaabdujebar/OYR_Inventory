@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ListBookController">
+   <children>
+      <Region prefHeight="400.0" prefWidth="65.0" />
+      <VBox layoutX="79.0" prefHeight="400.0" prefWidth="521.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="LIST OF BOOKS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Region prefHeight="39.0" prefWidth="521.0" />
+            <Button fx:id="showlist" alignment="TOP_RIGHT" mnemonicParsing="false" onAction="#showList" text="Show List" />
+            <Region prefHeight="21.0" prefWidth="521.0" />
+            <TableView fx:id="table" prefHeight="335.0" prefWidth="580.0">
+              <columns>
+                <TableColumn fx:id="isbn" prefWidth="111.0" text="ISBN" />
+                <TableColumn fx:id="title" prefWidth="202.0" text="TITLE" />
+                  <TableColumn fx:id="max" prefWidth="205.0" text="MAX CHECK OUT LENGTH" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

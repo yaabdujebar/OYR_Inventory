@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="934.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.AuthorController">
+   <children>
+      <Button fx:id="addauthor" layoutX="271.0" layoutY="349.0" mnemonicParsing="false" onAction="#addAuthor" text="Add Author" />
+      <TextField fx:id="fname" layoutX="200.0" layoutY="50.0" />
+      <TextField fx:id="lname" layoutX="200.0" layoutY="91.0" />
+      <TextField fx:id="tel" layoutX="200.0" layoutY="127.0" />
+      <TextField fx:id="street" layoutX="197.0" layoutY="163.0" />
+      <TextField fx:id="state" layoutX="200.0" layoutY="232.0" />
+      <TextField fx:id="zip" layoutX="200.0" layoutY="272.0" />
+      <Label layoutX="105.0" layoutY="54.0" prefHeight="17.0" prefWidth="69.0" text="First Name" />
+      <Label layoutX="105.0" layoutY="95.0" prefHeight="17.0" prefWidth="58.0" text="Last Name" />
+      <Label layoutX="107.0" layoutY="131.0" prefHeight="17.0" prefWidth="51.0" text="Tel" />
+      <Label layoutX="103.0" layoutY="167.0" text="Street" />
+      <Label layoutX="105.0" layoutY="236.0" text="State" />
+      <Label layoutX="107.0" layoutY="276.0" text="Zip" />
+      <Label layoutX="110.0" layoutY="311.0" text="Bio" />
+      <TextField fx:id="bio" layoutX="200.0" layoutY="307.0" />
+      <AnchorPane layoutX="333.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="405.0">
+         <children>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox layoutX="25.0" layoutY="51.0" prefHeight="279.0" prefWidth="550.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="257.0" prefWidth="249.0">
+                                 <children>
+                                    <Label alignment="TOP_RIGHT" prefHeight="18.0" prefWidth="213.0" text="ISBN NUMBER" />
+                                    <Region prefHeight="31.0" prefWidth="242.0" />
+                                    <Region prefHeight="12.0" prefWidth="242.0" />
+                                    <Region prefHeight="1.0" prefWidth="249.0" />
+                                    <Label alignment="TOP_RIGHT" prefHeight="34.0" prefWidth="212.0" text="TITLE" />
+                                    <Region prefHeight="31.0" prefWidth="242.0" />
+                                    <Label alignment="TOP_RIGHT" layoutX="10.0" layoutY="139.0" prefHeight="23.0" prefWidth="210.0" text="MAX CHECHOUT LENGTH" />
+                                    <Region prefHeight="0.0" prefWidth="238.0" />
+                                    <Region prefHeight="10.0" prefWidth="249.0" />
+                                    <Region layoutX="10.0" layoutY="115.0" prefHeight="24.0" prefWidth="172.0" />
+                                    <Region layoutX="10.0" layoutY="49.0" prefHeight="0.0" prefWidth="249.0" />
+                                    <Label alignment="TOP_RIGHT" layoutX="10.0" layoutY="70.0" prefHeight="68.0" prefWidth="212.0" text="NUMBER OF COPIES" />
+                                    <Region prefHeight="28.0" prefWidth="212.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" prefHeight="265.0" prefWidth="174.0">
+                                 <children>
+                                    <TextField fx:id="isbn" prefHeight="16.0" prefWidth="167.0" />
+                                    <Region prefHeight="11.0" prefWidth="167.0" />
+                                    <Region prefHeight="23.0" prefWidth="167.0" />
+                                    <TextField fx:id="title" prefHeight="24.0" prefWidth="168.0" />
+                                    <Region prefHeight="35.0" prefWidth="167.0" />
+                                    <TextField fx:id="length" layoutX="10.0" layoutY="10.0" prefHeight="22.0" prefWidth="184.0" />
+                                    <Region prefHeight="0.0" prefWidth="167.0" />
+                                    <Region layoutX="10.0" layoutY="49.0" prefHeight="45.0" prefWidth="167.0" />
+                                    <TextField fx:id="num" layoutX="10.0" layoutY="132.0" />
+                                    <Region layoutX="10.0" layoutY="111.0" prefHeight="21.0" prefWidth="184.0" />
+                                    <Button fx:id="addbook" mnemonicParsing="false" onAction="#addBook" text="ADD BOOK" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="271.0" prefWidth="149.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="105.0" layoutY="200.0" text="City" />
+      <TextField fx:id="city" layoutX="200.0" layoutY="196.0" />
+   </children>
+</AnchorPane>

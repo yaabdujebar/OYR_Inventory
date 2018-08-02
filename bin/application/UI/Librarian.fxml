@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane centerShape="false" focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="507.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.LibrarianController">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.1" prefHeight="310.0" prefWidth="421.0" BorderPane.alignment="TOP_LEFT">
+        <items>
+          <AnchorPane>
+               <children>
+                  <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Accordion>
+                           <panes>
+                              <TitledPane animated="false" prefHeight="323.0" prefWidth="213.0" text="LIBRARY MEMBER">
+                                 <content>
+                                    <BorderPane prefHeight="249.0" prefWidth="457.0">
+                                       <top>
+                                          <VBox prefHeight="200.0" prefWidth="453.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <VBox prefHeight="51.0" prefWidth="468.0">
+                                                   <children>
+                                                      <Button fx:id="checkOutRecordButton" mnemonicParsing="false" onAction="#checkOutToConsole" prefHeight="25.0" prefWidth="473.0" text="Check Out  On Console" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="-15.0" left="-15.0" right="-15.0" top="-15.0" />
+                                             </padding>
+                                          </VBox>
+                                       </top>
+                                    </BorderPane>
+                                 </content></TitledPane>
+                              <TitledPane animated="false" text="BOOK">
+                                 <content>
+                                    <BorderPane prefHeight="53.0" prefWidth="457.0">
+                                       <top>
+                                          <VBox prefHeight="85.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="100.0">
+                                                   <children>
+                                                      <Button fx:id="overDueButton" mnemonicParsing="false" onAction="#overDue" prefHeight="25.0" prefWidth="543.0" text="OverDue" VBox.vgrow="ALWAYS" />
+                                                      <Button fx:id="chechOutBookButton" mnemonicParsing="false" onAction="#chechOut" prefHeight="25.0" prefWidth="506.0" text="Check Out Book" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="-15.0" left="-15.0" right="-15.0" top="-15.0" />
+                                             </padding>
+                                          </VBox>
+                                       </top>
+                                    </BorderPane>
+                                 </content></TitledPane>
+                           </panes>
+                        </Accordion>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <TabPane fx:id="rootLibrarianTab" layoutY="-7.0" prefHeight="200.0" prefWidth="508.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <tabs>
+                        <Tab text="Home" />
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

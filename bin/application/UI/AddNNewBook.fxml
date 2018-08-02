@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="25.0" layoutY="51.0" prefHeight="279.0" prefWidth="550.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="279.0" prefWidth="266.0">
+                           <children>
+                              <Label alignment="TOP_RIGHT" prefHeight="17.0" prefWidth="213.0" text="ISBN NUMBER" />
+                              <Region prefHeight="41.0" prefWidth="212.0" />
+                              <Region prefHeight="16.0" prefWidth="249.0" />
+                              <Label alignment="TOP_RIGHT" prefHeight="37.0" prefWidth="212.0" text="TITLE" />
+                              <Region prefHeight="41.0" prefWidth="212.0" />
+                              <Label alignment="TOP_RIGHT" prefHeight="60.0" prefWidth="212.0" text="AUTHORS" />
+                              <Region prefHeight="10.0" prefWidth="249.0" />
+                              <Label alignment="TOP_RIGHT" layoutX="10.0" layoutY="139.0" prefHeight="52.0" prefWidth="210.0" text="MAX CHECHOUT LENGTH" />
+                              <Region layoutX="10.0" layoutY="115.0" prefHeight="24.0" prefWidth="172.0" />
+                              <Region layoutX="10.0" layoutY="49.0" prefHeight="0.0" prefWidth="249.0" />
+                              <Label alignment="TOP_RIGHT" layoutX="10.0" layoutY="70.0" prefHeight="68.0" prefWidth="212.0" text="NUMBER OF COPIES" />
+                              <Region prefHeight="28.0" prefWidth="212.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_RIGHT" prefHeight="279.0" prefWidth="185.0">
+                           <children>
+                              <TextField prefHeight="22.0" prefWidth="168.0" />
+                              <Region prefHeight="23.0" prefWidth="184.0" />
+                              <TextField prefHeight="24.0" prefWidth="168.0" />
+                              <Region prefHeight="29.0" prefWidth="168.0" />
+                              <TextField />
+                              <Region prefHeight="31.0" prefWidth="171.0" />
+                              <TextField layoutX="10.0" layoutY="10.0" prefHeight="22.0" prefWidth="184.0" />
+                              <Region layoutX="10.0" layoutY="49.0" prefHeight="23.0" prefWidth="184.0" />
+                              <TextField layoutX="10.0" layoutY="132.0" />
+                              <Region layoutX="10.0" layoutY="111.0" prefHeight="21.0" prefWidth="184.0" />
+                              <Button mnemonicParsing="false" text="ADD BOOK" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="271.0" prefWidth="149.0" />
+                     </children>
+                  </HBox>
+                  <Label layoutX="11.0" layoutY="1.0" prefHeight="45.0" prefWidth="534.0" text="ADD NEW BOOK TO LIBRARY COLLECTION">
+                     <font>
+                        <Font name="Calibri Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
